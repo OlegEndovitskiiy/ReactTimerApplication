@@ -28,7 +28,7 @@ describe('CountdownForm', () => {
 
         countdownForm.refs.seconds.value = 'dfdsfdsfdsfdsfds';
         TestUtils.Simulate.submit($el.find('form')[0]);
-
+ 
         expect(spy).toNotHaveBeenCalled();
     });
 });
